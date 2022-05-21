@@ -4,6 +4,8 @@ public class FirstClass {
     public static void main(String[] args) {
         System.out.println("This is homework");
 
+        System.out.println();
+
         String valstsNosaukums = "Sanmarīno";
         System.out.println("Valsts nosaukums: "+ valstsNosaukums);
 
@@ -23,8 +25,29 @@ public class FirstClass {
         System.out.println("ES dalībvalsts: "+ eiropasSavienibasDalibvalsts);
 
         char valstsValuda = '€';
-        System.out.println("Valūta: "+ valstsValuda);
+
+        System.out.println();
+        System.out.println();
+
+
+        System.out.println(valstsNosaukums + " ir pundurvalsts un tās galvaspilsēta saucas tā pat- " + valstsGalvaspilseta + ".");
+        System.out.println();
+        System.out.println(valstsNosaukums + " iedzīvotāju skaits 2020.gadā bija " + iedzivotajuSkaits + ".");
+        System.out.println();
+        System.out.println(valstsNosaukums + " nav ES dalībvalsts, bet tās valūta ir " + valstsValuda + ".");
+        System.out.println();
+        System.out.println("Oficiālā valsts valoda ir " + oficialaValoda + ".");
+
+        System.out.println();
+        System.out.println();
+
         
+
+
+
+
+
+
 
 
 
