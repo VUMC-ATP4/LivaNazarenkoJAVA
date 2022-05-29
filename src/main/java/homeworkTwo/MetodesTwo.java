@@ -28,12 +28,14 @@ public class MetodesTwo {
 
     }
     static void printBusinessCard(){
+        System.out.println("Business card");
         System.out.println("Name: Liva");
         System.out.println("Surname: Nazarenko");
         System.out.println("Phone number: 12345678");
         System.out.println("Date of birth: 1987");
     }
     static void printBusinessCardTwo(String name, String surname, String phoneNumber, String dateOfBirth){
+        System.out.println("Business card");
         System.out.println("Name: " + name);
         System.out.println("Surname: " + surname);
         System.out.println("Phone number: " + phoneNumber);
