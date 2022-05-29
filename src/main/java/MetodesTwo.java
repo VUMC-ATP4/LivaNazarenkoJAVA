@@ -6,7 +6,7 @@ public class MetodesTwo {
         printBusinessCard();
         System.out.println();
         printBusinessCard();
-
+        
         System.out.println();
         System.out.println();
 
