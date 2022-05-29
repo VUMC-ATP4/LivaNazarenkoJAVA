@@ -196,7 +196,7 @@ public class HomeWorkTwo {
         } else if (color.equals("green")) {
             System.out.println("You can move while there is green color");
         } else {
-            System.out.println("The color is not defined");
+            System.out.println("Be careful if the traffic light does not work properly!");
         }
     }
 }
