@@ -6,7 +6,7 @@ public class MetodesTwo {
         printBusinessCard();
         System.out.println();
         printBusinessCard();
-        
+
         System.out.println();
         System.out.println();
 
@@ -34,6 +34,7 @@ public class MetodesTwo {
         System.out.println("Date of birth: 1987");
     }
     static void printBusinessCardTwo(String name, String surname, String phoneNumber, String dateOfBirth){
+
         System.out.println("Name: " + name);
         System.out.println("Surname: " + surname);
         System.out.println("Phone number: " + phoneNumber);
