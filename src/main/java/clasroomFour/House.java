@@ -13,7 +13,7 @@ public class House {
     int skatijumuSkaits;
 
     public double cenaKvadratmetra(){
-        return cena.cena/platiba;
+       return cena;//.cena/platiba;
     }
 
     public void printetAdresi(){
@@ -29,7 +29,7 @@ public class House {
                 ", platiba=" + platiba + "m^2" +
                 ", cena=" + cena +
                 ", irStavvieta=" + irStavvieta +
-                ", cena kvadrātmetrā ir " + cena.cena/platiba +
+            //    ", cena kvadrātmetrā ir " + cena.cena/platiba +
                 '}');
     }
 }
