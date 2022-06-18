@@ -8,13 +8,13 @@ public class House {
     int ieejuSkaits;
     int istabuSkaits;
     double platiba;
-    int cena;
+    Cena cena;
     boolean irStavvieta;
     int skatijumuSkaits;
 
-   // public double cenaKvadratmetra(){
-       // return cena.cena/platiba;
-    //}
+   public double cenaKvadratmetra(){
+       return cena.cena/platiba;
+    }
 
     public void printetAdresi(){
         System.out.println("Mājas adrese ir: " + ielasNosaukums + " " + majasNumurs);
@@ -29,7 +29,7 @@ public class House {
                 ", platiba=" + platiba + "m^2" +
                 ", cena=" + cena +
                 ", irStavvieta=" + irStavvieta +
-               // ", cena kvadrātmetrā ir " + cena.cena/platiba +
+               ", cena kvadrātmetrā ir " + cena.cena/platiba +
                 '}');
     }
 }

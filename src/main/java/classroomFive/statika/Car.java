@@ -27,7 +27,7 @@ public class Car {
     public void setColor(String color) {
         this.color = color;
     }
-    
+
     //var taisīt arī statiskas metodes
     public static void makeSound(){
         System.out.println("brrrr");
