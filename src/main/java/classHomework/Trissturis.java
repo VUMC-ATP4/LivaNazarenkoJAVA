@@ -1,6 +1,6 @@
 package classHomework;
 
-public class Trissturis {
+public class Trissturis{
 
     // visu malu garumu mainīgajie(veseli skaitļi) un laukums
     int malaA, malaB, malaC;

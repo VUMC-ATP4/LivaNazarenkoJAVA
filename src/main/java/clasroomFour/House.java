@@ -12,9 +12,7 @@ public class House {
     boolean irStavvieta;
     int skatijumuSkaits;
 
-   public double cenaKvadratmetra(){
-       return cena.cena/platiba;
-    }
+
 
     public void printetAdresi(){
         System.out.println("Mājas adrese ir: " + ielasNosaukums + " " + majasNumurs);
