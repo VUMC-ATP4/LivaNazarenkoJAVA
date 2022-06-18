@@ -12,7 +12,7 @@ public class Main {
         Cena cena1 = new Cena();
         cena1.cena = 30000;
         cena1.valuta = '$';
-      //  majaViens.cena = cena1;
+        majaViens.cena = cena1;
         majaViens.platiba = 300;
         majaViens.stavuSkaits = 2;
         majaViens.irStavvieta = true;
@@ -26,7 +26,7 @@ public class Main {
         majaDivi.platiba = 400;
 
         Cena cena2 = new Cena();
-        //majaDivi.cena = cena2;
+        majaDivi.cena = cena2;
 
 
         majaViens.printetAdresi();
