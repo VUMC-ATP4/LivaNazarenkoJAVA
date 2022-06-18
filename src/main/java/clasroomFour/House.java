@@ -8,7 +8,9 @@ public class House {
     int ieejuSkaits;
     int istabuSkaits;
     double platiba;
-    int cena;
+
+    Cena cena;
+
     boolean irStavvieta;
     int skatijumuSkaits;
 
