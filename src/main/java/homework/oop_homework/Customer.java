@@ -8,8 +8,6 @@ public class Customer {
 
     public Customer(String name, boolean isMember, String memberType) {
         this.name = name;
-        this.isMember = isMember;
-        this.memberType = memberType;
     }
 
     public String getName() {
@@ -20,19 +18,24 @@ public class Customer {
         this.name = name;
     }
 
-    public boolean isMember() {
-        return isMember;
-    }
-
-    public void setMember(boolean member) {
-        isMember = member;
-    }
-
     public String getMemberType() {
+        return memberType;
+    }
+
+    public String isMember(){
         return memberType;
     }
 
     public void setMemberType(String memberType) {
         this.memberType = memberType;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", isMember=" + isMember +
+                ", memberType='" + memberType + '\'' +
+                '}';
     }
 }
