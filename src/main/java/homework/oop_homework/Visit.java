@@ -4,31 +4,58 @@ import java.util.Date;
 
 public class Visit {
 
-    private String Costumer;
+    private Customer customer;
     private Date date;
     private double serviceExpense;
     private double productExpense;
 
-    public Visit(String costumer, Date date) {
-        Costumer = costumer;
+    public Visit(Customer customer, Date date) {
+        this.customer = customer;
         this.date = date;
     }
 
-    public double getServiceExpense() {
-        return serviceExpense;
+    public String getName() {
+        return customer.getName();
     }
-
+    public double getServiceExpense() {// paņemts no piemēra, pati līdz šitam nebūtu aizdomājusies
+        if (!customer.isMember()) {
+            return serviceExpense;
+        } else {
+            return serviceExpense - (serviceExpense * DiscountRate.getServiceDiscountRate(customer.getMemberType()));
+        }
+    }
     public void setServiceExpense(double serviceExpense) {
-        this.serviceExpense = serviceExpense;
+        this.serviceExpense = this.serviceExpense + serviceExpense;
     }
 
     public double getProductExpense() {
-        return productExpense;
+        if (!customer.isMember()) {
+            return productExpense;
+        } else {
+            return productExpense - (productExpense * DiscountRate.getProductDiscountRate(customer.getMemberType()));
+        }
     }
 
     public void setProductExpense(double productExpense) {
-        this.productExpense = productExpense;
+        this.productExpense = this.productExpense + productExpense;
     }
 
+    public double getTotalExpense() {
+        return  (serviceExpense - (serviceExpense * DiscountRate.getServiceDiscountRate(customer.getMemberType()))) +
+                (productExpense - (productExpense * DiscountRate.getProductDiscountRate(customer.getMemberType())));
 
+    }
+
+    @Override
+    public String toString() {
+        return "Visit:" +
+                " customer name= " + customer.getName() +
+                ", customer member= " + customer.isMember() +
+                ", customer member type= " + customer.getMemberType() +
+                ", date= " + date +
+                ", serviceExpense= " + serviceExpense +
+                ", productExpense= " + productExpense +
+                '.';
+    }
 }
+
